@@ -8,7 +8,7 @@ The software was developed for the Data Science and Research Software Project mo
 
 The project uses the following publicly available dataset:
 
-> Dominguez Caballero, J. A., Moore, J., and Stammers, J. (2023). *Sensor signals for machine tool and process health assessment*. The University of Sheffield. Dataset.
+> Dominguez Caballero, J. A., Moore, J., and Stammers, J. (2023). *Sensor signals for machine tool and process life assessment*. The University of Sheffield. Dataset.
 
 DOI:
 
@@ -19,7 +19,7 @@ https://doi.org/10.15131/shef.data.24125715.v1
 Dataset page:
 
 ```text
-https://orda.shef.ac.uk/articles/dataset/Sensor_signals_for_machine_tool_and_process_health_assessment_/24125715
+https://orda.shef.ac.uk/articles/dataset/Sensor_signals_for_machine_tool_and_process_life_assessment_/24125715
 ```
 
 The dataset is not included in this repository. The data files are large and must be downloaded separately from the official source.
@@ -112,8 +112,8 @@ Signals containing no valid numeric samples are always rejected.
 Clone the repository:
 
 ```bash
-git clone https://github.com/abiswas2-stack/machining-tool-health-analysis.git
-cd machining-tool-health-analysis
+git clone https://github.com/abiswas2-stack/machining-tool-life-analysis.git
+cd machining-tool-life-analysis
 ```
 
 Create a virtual environment:
@@ -212,7 +212,7 @@ Tests are also executed automatically through GitHub Actions after pushes and pu
 ## Project structure
 
 ```text
-machining-tool-health-analysis/
+machining-tool-life-analysis/
 ├── .github/
 │   └── workflows/
 │       └── tests.yml
