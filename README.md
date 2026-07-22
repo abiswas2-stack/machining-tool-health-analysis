@@ -1,4 +1,4 @@
-# Machining Tool Health Analysis
+# Machining Tool Life Analysis
 
 A Python command-line tool for exploratory comparison of segmented machine-tool sensor signals recorded under baseline and simulated fault conditions.
 
