@@ -1,4 +1,26 @@
+# Dataset files must not be committed
 data/
+*.mat
+*.h5
+*.hdf5
+
+# Python cache files
 __pycache__/
 *.pyc
+*.pyo
+
+# Test and coverage outputs
 .pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
