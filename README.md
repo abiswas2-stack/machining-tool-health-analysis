@@ -22,11 +22,23 @@ Place downloaded `.mat` files inside a local `data/` folder at the project root 
 ## Installation
 
 1. Clone this repository:
+
+       git clone https://github.com/abiswas2-stack/machining-tool-health-analysis.git
+       cd machining-tool-health-analysis
+
 2. Install the required Python libraries:
+
+       pip install -r requirements.txt
+
 ## Usage
 
 Run the command-line tool from inside the `src` folder, pointing it at two `.mat` files to compare:
+
+    cd src
+    python main.py --file1 ../data/Segmented_Machining_Baseline.mat --group1 BaselineCrop --file2 ../data/Segmented_Machining_ToolWear.mat --group2 ToolWearCrop --field SpindleX --segments 10
+
 **Arguments:**
+
 | Argument | Required | Description |
 |---|---|---|
 | `--file1` | Yes | Path to the first `.mat` file (typically the baseline/healthy condition) |
@@ -37,12 +49,31 @@ Run the command-line tool from inside the `src` folder, pointing it at two `.mat
 | `--segments` | No (default: `10`) | How many recorded segments to compare |
 
 View all options at any time with:
+
+    python main.py --help
+
 ## Running the tests
 
 From the project root:
+
+    pytest
+
 Tests use a small, synthetically generated `.mat`-style file (created automatically during testing) so they can run without needing the full dataset downloaded.
 
 ## Project structure
+
+    machining-project/
+    ├── data/               # .mat data files (not tracked in git - see "Where to get the data")
+    ├── src/
+    │   ├── machining_file.py   # MachiningFile class: loading and analyzing sensor segments
+    │   ├── main.py              # command-line interface
+    │   └── explore_data.py      # exploratory scratch script
+    ├── tests/
+    │   └── test_machining_file.py
+    ├── requirements.txt
+    ├── LICENSE
+    └── README.md
+
 ## License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
