@@ -1,4 +1,4 @@
-# machining-project
+
 # Machining Tool Health Analysis
 
 A Python tool for analyzing sensor signals from machine tool health monitoring data, with a focus on detecting simulated faults (e.g. tool wear, misalignment) in machining processes.
