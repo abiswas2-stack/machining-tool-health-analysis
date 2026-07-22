@@ -1,3 +1,15 @@
+"""
+Exploratory / scratch script.
+
+This file was used during development to explore the dataset's structure,
+test the MachiningFile class, and prototype comparisons between baseline
+and fault conditions. It is not part of the core software (see main.py
+for the command-line tool), but is kept here to show the development
+and analysis process.
+"""
+
+
+
 from machining_file import MachiningFile
 
 baseline = MachiningFile('../data/Segmented_Machining_Baseline.mat', 'BaselineCrop')
